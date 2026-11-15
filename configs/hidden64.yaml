@@ -1,0 +1,9 @@
+# Same as baseline but with one hidden ReLU layer between embedding and output.
+name: hidden64
+embedding_dim: 24
+hidden_dim: 64
+epochs: 10
+optimizer: adam
+lr: 0.005
+mapping:
+  name: shift

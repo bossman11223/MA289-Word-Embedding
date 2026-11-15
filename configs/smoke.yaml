@@ -1,0 +1,8 @@
+# Quick pipeline check: 1 epoch. Not meant for a real submission.
+name: smoke
+epochs: 1
+batch_size: 4096
+mapping:
+  name: rescale
+  target_mean: 0.5
+  target_std: 0.2

@@ -1,0 +1,17 @@
+# Python / environment
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Competition data (do not commit Kaggle files)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Run outputs (embeddings, plots, submissions). results.csv is kept so scores are tracked.
+runs/*
+!runs/.gitkeep
+!runs/results.csv

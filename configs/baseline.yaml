@@ -1,0 +1,15 @@
+# Notebook baseline: plain skip-gram, d=24, Adam lr=0.01, (cos+1)/2 mapping.
+name: baseline
+pairs_file: data/raw/context_train.csv
+val_fraction: 0.1
+embedding_dim: 24
+hidden_dim: 0
+epochs: 10
+batch_size: 1024
+optimizer: adam
+lr: 0.01
+weight_decay: 0.0
+seed: 289
+device: auto
+mapping:
+  name: shift

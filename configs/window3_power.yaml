@@ -1,0 +1,12 @@
+# Train on pairs rebuilt from the corpus. Run this first:
+#   python scripts/build_pairs.py --window 3
+name: window3_power
+pairs_file: data/processed/pairs_window3.csv
+embedding_dim: 32
+epochs: 5
+optimizer: adam
+lr: 0.005
+weight_decay: 0.0
+mapping:
+  name: power
+  power: 0.5
